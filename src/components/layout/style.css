@@ -8,7 +8,7 @@
 
 .headNav .navbar-brand {
 	color: var(--morent-primary);
-	font-weight: 800;
+	font-weight: 700;
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -93,5 +93,55 @@
 /* navbar style end */
 
 /* footer style start */
+
+footer {
+	padding-top: 100px;
+	padding-bottom: 24px;
+	background-color: #fff;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer .foot-logo {
+	font-size: 30px;
+	font-weight: 700;
+	color: var(--morent-primary);
+	margin-bottom: 20px;
+}
+
+footer .foot-para {
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--morent-secondary);
+}
+
+footer .foot-link-heading {
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 24px;
+}
+
+footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+footer ul li {
+	margin-bottom: 12px;
+}
+
+footer ul a {
+	color: var(--morent-secondary);
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.sub-foot a {
+	color: #000;
+	font-weight: 600;
+}
 
 /* footer style end */

@@ -1,0 +1,158 @@
+:root {
+	--morent-primary: #3563e9;
+	--morent-primary-100: #54a6ff;
+	--morent-secondary: #717171;
+	--morent-icon: #90a3bf;
+	--morent-nav-icon: #596780;
+	--morent-body: #f6f7f9;
+	--morent-heading: #1a202c;
+}
+
+html,
+body,
+#root {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: "Inconsolata", monospace;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Font Sizes */
+.font-size-8 {
+	font-size: 8px;
+}
+.font-size-10 {
+	font-size: 10px;
+}
+.font-size-12 {
+	font-size: 12px;
+}
+.font-size-14 {
+	font-size: 14px;
+}
+.font-size-16 {
+	font-size: 16px;
+}
+.font-size-18 {
+	font-size: 18px;
+}
+.font-size-20 {
+	font-size: 20px;
+}
+.font-size-22 {
+	font-size: 22px;
+}
+.font-size-24 {
+	font-size: 24px;
+}
+.font-size-26 {
+	font-size: 26px;
+}
+.font-size-28 {
+	font-size: 28px;
+}
+.font-size-30 {
+	font-size: 30px;
+}
+.font-size-32 {
+	font-size: 32px;
+}
+.font-size-34 {
+	font-size: 34px;
+}
+.font-size-36 {
+	font-size: 36px;
+}
+.font-size-38 {
+	font-size: 38px;
+}
+.font-size-40 {
+	font-size: 40px;
+}
+.font-size-42 {
+	font-size: 42px;
+}
+.font-size-44 {
+	font-size: 44px;
+}
+.font-size-46 {
+	font-size: 46px;
+}
+.font-size-48 {
+	font-size: 48px;
+}
+.font-size-50 {
+	font-size: 50px;
+}
+.font-size-52 {
+	font-size: 52px;
+}
+.font-size-54 {
+	font-size: 54px;
+}
+.font-size-56 {
+	font-size: 56px;
+}
+.font-size-58 {
+	font-size: 58px;
+}
+.font-size-60 {
+	font-size: 60px;
+}
+.font-size-62 {
+	font-size: 62px;
+}
+.font-size-64 {
+	font-size: 64px;
+}
+.font-size-66 {
+	font-size: 66px;
+}
+.font-size-68 {
+	font-size: 68px;
+}
+.font-size-70 {
+	font-size: 70px;
+}
+.font-size-72 {
+	font-size: 72px;
+}
+
+/* Font Weights */
+.font-weight-100 {
+	font-weight: 100;
+}
+.font-weight-200 {
+	font-weight: 200;
+}
+.font-weight-300 {
+	font-weight: 300;
+}
+.font-weight-400 {
+	font-weight: 400;
+}
+.font-weight-500 {
+	font-weight: 500;
+}
+.font-weight-600 {
+	font-weight: 600;
+}
+.font-weight-700 {
+	font-weight: 700;
+}
+.font-weight-800 {
+	font-weight: 800;
+}
+.font-weight-900 {
+	font-weight: 900;
+}

@@ -19,6 +19,8 @@ body {
 	font-family: "Inconsolata", monospace;
 	font-size: 16px;
 	font-weight: 400;
+	background-color: var(--morent-body);
+	overflow-x: hidden;
 }
 
 * {
@@ -155,4 +157,10 @@ body {
 }
 .font-weight-900 {
 	font-weight: 900;
+}
+
+input:focus,
+.form-control:focus {
+	box-shadow: none;
+	border-color: var(--morent-primary);
 }

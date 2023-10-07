@@ -204,6 +204,10 @@ input:focus,
 	cursor: pointer;
 }
 
+.flex-1 {
+	flex: 1;
+}
+
 /* buttons */
 
 .btn-primary-morent,

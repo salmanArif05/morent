@@ -69,7 +69,7 @@ const Home = () => {
 						</div>
 					</div>
 
-					<div className="row">
+					<div className="row mb-5">
 						{new Array(4).fill(0).map((item, i) => {
 							return (
 								<React.Fragment key={i}>
@@ -79,6 +79,36 @@ const Home = () => {
 								</React.Fragment>
 							);
 						})}
+					</div>
+
+					<div className="d-flex align-items-center justify-content-between px-4 mb-5">
+						<div className="fs-16 fw-500 text-secondary-100">Recommendation Car</div>
+						<div className="">
+							{/* <a href="#" className="fs-16 fw-600 text-primary-100">
+								View All
+							</a> */}
+						</div>
+					</div>
+
+					<div className="row mb-5">
+						{new Array(12).fill(0).map((item, i) => {
+							return (
+								<React.Fragment key={i}>
+									<div className="col-lg-3 mb-3">
+										<ProductCard />
+									</div>
+								</React.Fragment>
+							);
+						})}
+					</div>
+
+					<div className="d-flex align-items-center justify-content-center px-4 mb-5">
+						<div className="mx-auto">
+							<button type="button" className="btn btn-primary-morent">
+								Show more car
+							</button>
+						</div>
+						<div className="fs-16 fw-500 text-secondary-100">120 Car</div>
 					</div>
 				</div>
 			</section>

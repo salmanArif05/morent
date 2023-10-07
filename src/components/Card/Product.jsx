@@ -1,20 +1,27 @@
 import React from "react";
-import { BsHeart, BsFillFuelPumpFill } from "react-icons/bs";
+import { BsHeart, BsHeartFill, BsFillFuelPumpFill } from "react-icons/bs";
 import { PiSteeringWheelFill } from "react-icons/pi";
 import { HiUsers } from "react-icons/hi";
 
-const ProductCard = () => {
+const ProductCard = ({ data }) => {
+	const { carTitle, carCategory, fav, salePrice } = data;
 	return (
 		<>
 			<div className="product-card">
 				<div className="d-flex align-items-center justify-content-between">
 					<div className="d-flex flex-column">
-						<div className="car-title fs-20 fw-600">Koenigsegg</div>
-						<div className="car-category fs-14 fw-500 text-secondary-100">Sport</div>
+						<div className="car-title fs-20 fw-600 text-capitalize">{carTitle}</div>
+						<div className="car-category fs-14 fw-500 text-secondary-100 text-capitalize">{carCategory}</div>
 					</div>
-					<div className="pointer text-secondary-100">
-						<BsHeart />
-					</div>
+					{fav ? (
+						<div className="pointer heart-fav-filled">
+							<BsHeartFill />
+						</div>
+					) : (
+						<div className="pointer text-secondary-100">
+							<BsHeart />
+						</div>
+					)}
 				</div>
 				<div className="car-img">
 					<img src="/assets/car.png" alt="" />
@@ -42,9 +49,16 @@ const ProductCard = () => {
 				</div>
 
 				<div className="d-flex justify-content-between align-items-center">
-					<div className="fs-16 ">
-						<strong>$99.00/</strong>
-						<small className="text-secondary-100">day</small>
+					<div className="d-flex flex-column">
+						<div className="fs-16">
+							<strong>$99.00/</strong>
+							<small className="text-secondary-100">day</small>
+						</div>
+						{salePrice && (
+							<small className="text-secondary-100">
+								<s>100</s>
+							</small>
+						)}
 					</div>
 					<div>
 						<button type="button" className="btn btn-primary-morent">

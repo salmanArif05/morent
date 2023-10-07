@@ -208,6 +208,10 @@ input:focus,
 	flex: 1;
 }
 
+.heart-fav-filled {
+	color: #ed3f3f;
+}
+
 /* buttons */
 
 .btn-primary-morent,

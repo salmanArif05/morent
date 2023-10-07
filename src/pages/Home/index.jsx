@@ -25,6 +25,108 @@ const Home = () => {
 		},
 	];
 
+	const productData = [
+		{
+			carTitle: "Koenigsegg",
+			carCategory: "Sport",
+			fav: true,
+			salePrice: true,
+		},
+		{
+			carTitle: "Aston Martin",
+			carCategory: "Sport",
+			fav: false,
+			salePrice: false,
+		},
+		{
+			carTitle: "Koenigsegg",
+			carCategory: "Sport",
+			fav: true,
+			salePrice: true,
+		},
+		{
+			carTitle: "Aston Martin",
+			carCategory: "Sport",
+			fav: false,
+			salePrice: false,
+		},
+	];
+
+	const recomendCar = [
+		{
+			carTitle: "Koenigsegg",
+			carCategory: "Sport",
+			fav: true,
+			salePrice: true,
+		},
+		{
+			carTitle: "Aston Martin",
+			carCategory: "Sport",
+			fav: false,
+			salePrice: false,
+		},
+		{
+			carTitle: "Koenigsegg",
+			carCategory: "Sport",
+			fav: true,
+			salePrice: true,
+		},
+		{
+			carTitle: "Aston Martin",
+			carCategory: "Sport",
+			fav: false,
+			salePrice: false,
+		},
+		{
+			carTitle: "Koenigsegg",
+			carCategory: "Sport",
+			fav: true,
+			salePrice: true,
+		},
+		{
+			carTitle: "Aston Martin",
+			carCategory: "Sport",
+			fav: false,
+			salePrice: false,
+		},
+		{
+			carTitle: "Koenigsegg",
+			carCategory: "Sport",
+			fav: true,
+			salePrice: true,
+		},
+		{
+			carTitle: "Aston Martin",
+			carCategory: "Sport",
+			fav: false,
+			salePrice: false,
+		},
+		{
+			carTitle: "Koenigsegg",
+			carCategory: "Sport",
+			fav: true,
+			salePrice: true,
+		},
+		{
+			carTitle: "Aston Martin",
+			carCategory: "Sport",
+			fav: false,
+			salePrice: false,
+		},
+		{
+			carTitle: "Koenigsegg",
+			carCategory: "Sport",
+			fav: true,
+			salePrice: true,
+		},
+		{
+			carTitle: "Aston Martin",
+			carCategory: "Sport",
+			fav: false,
+			salePrice: false,
+		},
+	];
+
 	return (
 		<>
 			<header className="my-5">
@@ -70,11 +172,11 @@ const Home = () => {
 					</div>
 
 					<div className="row mb-5">
-						{new Array(4).fill(0).map((item, i) => {
+						{productData.map((item, i) => {
 							return (
 								<React.Fragment key={i}>
 									<div className="col-lg-3">
-										<ProductCard />
+										<ProductCard data={item} />
 									</div>
 								</React.Fragment>
 							);
@@ -91,11 +193,11 @@ const Home = () => {
 					</div>
 
 					<div className="row mb-5">
-						{new Array(12).fill(0).map((item, i) => {
+						{recomendCar.map((item, i) => {
 							return (
 								<React.Fragment key={i}>
 									<div className="col-lg-3 mb-3">
-										<ProductCard />
+										<ProductCard data={item} />
 									</div>
 								</React.Fragment>
 							);

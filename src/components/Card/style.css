@@ -1,11 +1,11 @@
 .main-card {
+	width: 100%;
 	min-height: 300px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	padding: 20px;
-	padding-top: 30px;
 	border-radius: 12px;
+	padding: 30px 20px 10px 20px;
 }
 
 .main-card .heading {
@@ -21,4 +21,72 @@
 	font-weight: 400;
 	color: #fff;
 	width: 50%;
+}
+
+.main-card .car-img {
+	width: 100%;
+	height: 120px;
+}
+
+.main-card .car-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+/* search card */
+
+.search-card {
+	background-color: #fff;
+	border-radius: 12px;
+	padding: 20px 30px;
+}
+
+.search-card .pick-dot,
+.search-card .drop-dot {
+	--size: 8px;
+	width: var(--size);
+	height: var(--size);
+	border-radius: 50%;
+}
+
+.input-search-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	border-right: 1px solid var(--morent-icon);
+}
+
+.input-search-container label {
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.input-search-container select {
+	border: 0;
+	outline: none;
+	width: 100%;
+	font-size: 12px;
+	font-weight: 500;
+	color: var(--morent-icon);
+}
+
+/* product card */
+
+.product-card {
+	background-color: #fff;
+	border-radius: 12px;
+	width: 100%;
+	padding: 14px;
+}
+
+.product-card .car-img {
+	width: 100%;
+	height: 120px;
+}
+
+.product-card .car-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }

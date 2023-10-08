@@ -132,7 +132,7 @@ const Home = () => {
 			<header className="my-5">
 				<div className="container">
 					<div className="row">
-						<div className="col-lg-6">
+						<div className="col-lg-6 mb-4 mb-lg-0">
 							<HeaderCard data={headerData[0]} />
 						</div>
 						<div className="col-lg-6">
@@ -175,7 +175,7 @@ const Home = () => {
 						{productData.map((item, i) => {
 							return (
 								<React.Fragment key={i}>
-									<div className="col-lg-3">
+									<div className="col-lg-3 mb-4 mb-lg-0">
 										<ProductCard data={item} />
 									</div>
 								</React.Fragment>
@@ -196,7 +196,7 @@ const Home = () => {
 						{recomendCar.map((item, i) => {
 							return (
 								<React.Fragment key={i}>
-									<div className="col-lg-3 mb-3">
+									<div className="col-lg-3 mb-4 mb-lg-0">
 										<ProductCard data={item} />
 									</div>
 								</React.Fragment>

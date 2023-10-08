@@ -10,7 +10,7 @@ const Search = ({ heading, bgDot }) => {
 				</div>
 
 				<div className="row mx-0">
-					<div className="col-lg-4 px-0">
+					<div className="col-4 px-0">
 						<div className="input-search-container pe-3">
 							<label htmlFor="location">Locations</label>
 							<select name="" id="">
@@ -19,7 +19,7 @@ const Search = ({ heading, bgDot }) => {
 							</select>
 						</div>
 					</div>
-					<div className="col-lg-4 px-0">
+					<div className="col-4 px-0">
 						<div className="input-search-container px-3">
 							<label htmlFor="location">Date</label>
 							<select name="" id="">
@@ -28,7 +28,7 @@ const Search = ({ heading, bgDot }) => {
 							</select>
 						</div>
 					</div>
-					<div className="col-lg-4 px-0">
+					<div className="col-4 px-0">
 						<div className="input-search-container border-0 ps-3">
 							<label htmlFor="location">Time</label>
 							<select name="" id="">

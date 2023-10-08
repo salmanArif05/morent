@@ -11,9 +11,9 @@ const Footer = () => {
 							<div className="foot-logo">MORENT</div>
 							<p className="foot-para">Our vision is to provide convenience and help increase your sales business.</p>
 						</div>
-						<div className="col-lg-6 offset-lg-2">
+						<div className="col-lg-6 offset-lg-2 mt-4 mt-lg-0">
 							<div className="row">
-								<div className="col-lg-4">
+								<div className="col-lg-4 col-6">
 									<div className="foot-link-heading">About</div>
 									<ul className="foot-links">
 										<li>
@@ -30,7 +30,7 @@ const Footer = () => {
 										</li>
 									</ul>
 								</div>
-								<div className="col-lg-4">
+								<div className="col-lg-4 col-6">
 									<div className="foot-link-heading">Community</div>
 									<ul className="foot-links">
 										<li>
@@ -47,7 +47,7 @@ const Footer = () => {
 										</li>
 									</ul>
 								</div>
-								<div className="col-lg-4">
+								<div className="col-lg-4 col-6 mt-4 mt-lg-0">
 									<div className="foot-link-heading">Socials</div>
 									<ul className="foot-links">
 										<li>
@@ -68,9 +68,9 @@ const Footer = () => {
 						</div>
 					</div>
 					<hr className="my-5" />
-					<div className="sub-foot d-flex align-items-center justify-content-between">
-						<div className="fs-16 fw-500">©2023 MORENT. All rights reserved</div>
-						<div className="d-flex gap-5">
+					<div className="sub-foot d-flex flex-column flex-lg-row align-items-lg-center justify-content-between">
+						<div className="fs-16 fw-500 order-2 order-lg-1 mt-4 mt-lg-0">©2023 MORENT. All rights reserved</div>
+						<div className="d-flex gap-5 order-1 order-lg-2 justify-content-between">
 							<a href="#" className="d-inline-block fs-16 fw-500">
 								Privacy & Policy
 							</a>

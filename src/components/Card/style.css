@@ -94,11 +94,48 @@
 	object-fit: contain;
 }
 
-.product-card .productOverlay {
+.product-card .productOverlay,
+.responsive-card .carOverlay {
 	width: 100%;
 	height: 68px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+}
+
+/* responsive card */
+
+.responsive-card {
+	border-radius: 10px;
+	background-color: #fff;
+	padding: 16px;
+}
+
+.responsive-card .car-img {
+	width: 100%;
+	height: 65px;
+	position: relative;
+}
+
+.responsive-card .carOverlay {
+	height: 44px;
+}
+
+.responsive-card .car-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+@media screen and (max-width: 767px) {
+	.main-card .heading {
+		width: 100%;
+		font-size: 16px;
+	}
+
+	.main-card .para {
+		width: 100%;
+		font-size: 12px;
+	}
 }

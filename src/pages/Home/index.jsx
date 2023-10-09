@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import { HeaderCard, ProductCard, SearchCard } from "../../components";
+import { HeaderCard, ProductCard, ProductResponsive, SearchCard } from "../../components";
 import { TbArrowsSort } from "react-icons/tb";
 
 const Home = () => {
@@ -177,7 +177,7 @@ const Home = () => {
 						<div className="col-lg-6 mb-4 mb-lg-0">
 							<HeaderCard data={headerData[0]} />
 						</div>
-						<div className="col-lg-6">
+						<div className="col-lg-6 d-none d-lg-block">
 							<HeaderCard data={headerData[1]} />
 						</div>
 					</div>
@@ -204,7 +204,7 @@ const Home = () => {
 
 			<section className="mb-5">
 				<div className="container">
-					<div className="d-flex align-items-center justify-content-between px-4 mb-5">
+					<div className="d-flex align-items-center justify-content-between px-lg-4 mb-5">
 						<div className="fs-16 fw-600 text-secondary-100">Popular Car</div>
 						<div className="">
 							<a href="#" className="fs-16 fw-600 text-primary-100">
@@ -225,7 +225,7 @@ const Home = () => {
 						})}
 					</div>
 
-					<div className="d-flex align-items-center justify-content-between px-4 mb-5">
+					<div className="d-flex align-items-center justify-content-between px-lg-4 mb-5">
 						<div className="fs-16 fw-600 text-secondary-100">Recommendation Car</div>
 						<div className="">
 							{/* <a href="#" className="fs-16 fw-600 text-primary-100">
@@ -238,8 +238,11 @@ const Home = () => {
 						{recomendCar.map((item, i) => {
 							return (
 								<React.Fragment key={i}>
-									<div className="col-lg-3 mb-4">
+									<div className="col-lg-3 mb-4 d-none d-lg-block">
 										<ProductCard data={item} />
+									</div>
+									<div className="col-lg-3 d-block d-lg-none mb-4">
+										<ProductResponsive data={item} />
 									</div>
 								</React.Fragment>
 							);

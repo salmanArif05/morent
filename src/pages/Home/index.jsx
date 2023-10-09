@@ -62,6 +62,7 @@ const Home = () => {
 			carCategory: "SUV",
 			fav: true,
 			salePrice: true,
+			recomend: true,
 			img: "/assets/rush.png",
 		},
 		{
@@ -69,6 +70,7 @@ const Home = () => {
 			carCategory: "SUV",
 			fav: false,
 			salePrice: false,
+			recomend: true,
 			img: "/assets/cr-v.png",
 		},
 		{
@@ -76,6 +78,7 @@ const Home = () => {
 			carCategory: "SUV",
 			fav: true,
 			salePrice: true,
+			recomend: true,
 			img: "/assets/terios.png",
 		},
 		{
@@ -83,6 +86,7 @@ const Home = () => {
 			carCategory: "SUV",
 			fav: false,
 			salePrice: false,
+			recomend: true,
 			img: "/assets/crv-black.png",
 		},
 		{
@@ -90,6 +94,7 @@ const Home = () => {
 			carCategory: "Hatchback",
 			fav: true,
 			salePrice: true,
+			recomend: true,
 			img: "/assets/mg-zx.png",
 		},
 		{
@@ -97,6 +102,7 @@ const Home = () => {
 			carCategory: "SUV",
 			fav: false,
 			salePrice: false,
+			recomend: true,
 			img: "/assets/mg-zs.png",
 		},
 		{
@@ -104,6 +110,7 @@ const Home = () => {
 			carCategory: "Hatchback",
 			fav: true,
 			salePrice: true,
+			recomend: true,
 			img: "/assets/mg-zx.png",
 		},
 		{
@@ -111,6 +118,7 @@ const Home = () => {
 			carCategory: "SUV",
 			fav: false,
 			salePrice: false,
+			recomend: true,
 			img: "/assets/mg-zs.png",
 		},
 	];

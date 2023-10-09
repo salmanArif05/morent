@@ -145,7 +145,7 @@ const Home = () => {
 							<SearchCard heading={"Pick-Up"} bgDot={"bg-primary-morent shadow-primary-morent"} />
 						</div>
 						<div className="col-lg-2 text-center">
-							<button type="button" className="btn btn-primary-morent shadow-primary-morent px-4 py-3 fs-28">
+							<button type="button" className="btn btn-primary-morent shadow-primary-morent swap-btn fs-28">
 								<TbArrowsSort />
 							</button>
 						</div>

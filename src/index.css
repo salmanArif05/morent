@@ -241,3 +241,12 @@ input:focus,
 	color: #fff;
 	opacity: 0.8;
 }
+
+.swap-btn {
+	--size: 60px;
+	width: var(--size);
+	height: var(--size);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}

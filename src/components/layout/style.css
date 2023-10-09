@@ -26,9 +26,10 @@
 	height: 100%;
 	border-radius: 40px;
 	padding: 5px 40px 5px 55px;
-	font-size: 1rem;
+	font-size: 14px;
 	font-weight: 500;
-	color: var(--morent-nav-icon);
+	color: #596780;
+	border: 1px solid rgba(195, 212, 233, 0.4);
 }
 
 .headNav .search .search-icon,
@@ -49,7 +50,7 @@
 
 .headNav .nav-link {
 	--size: 35px;
-	border: 1px solid var(--morent-icon);
+	border: 1px solid rgba(195, 212, 233, 0.4);
 	border-radius: 50%;
 	width: var(--size);
 	height: var(--size);

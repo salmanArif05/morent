@@ -25,7 +25,8 @@ const ProductCard = ({ data }) => {
 				</div>
 				<div className="car-img">
 					<img src={img} alt="" />
-					{recomend && <div className="productOverlay"></div>}
+					{/* {recomend && <div className="productOverlay"></div>} */}
+					<div className="productOverlay"></div>
 				</div>
 
 				<div className="d-flex gap-2 justify-content-between  align-items-center my-3 text-secondary-100">

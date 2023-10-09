@@ -4,7 +4,7 @@ import { PiSteeringWheelFill } from "react-icons/pi";
 import { HiUsers } from "react-icons/hi";
 
 const ProductCard = ({ data }) => {
-	const { carTitle, carCategory, fav, salePrice } = data;
+	const { carTitle, carCategory, fav, salePrice, img } = data;
 	return (
 		<>
 			<div className="product-card">
@@ -24,7 +24,7 @@ const ProductCard = ({ data }) => {
 					)}
 				</div>
 				<div className="car-img">
-					<img src="/assets/car.png" alt="" />
+					<img src={img} alt="" />
 				</div>
 
 				<div className="d-flex gap-2 justify-content-between  align-items-center my-3 text-secondary-100">

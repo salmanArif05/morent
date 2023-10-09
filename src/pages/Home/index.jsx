@@ -1,62 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import { HeaderCard, ProductCard, SearchCard } from "../../components";
 import { TbArrowsSort } from "react-icons/tb";
 
 const Home = () => {
-	const headerData = [
-		{
-			heading: `The Best Platform for Car Rental`,
-			para: `Ease of doing a car rental safely and
-			reliably. Of course at a low price.`,
-			backgroundColor: "#54a6ff",
-			background: "/assets/ad-bg-1.png",
-			btnLabel: "Rental Car",
-			btnClass: "btn-primary-morent",
-		},
-		{
-			heading: `Easy way to rent a car at a low price`,
-			para: `Providing cheap car rental services
-			and safe and comfortable facilities.`,
-			backgroundColor: "#3563e9",
-			background: "/assets/ad-bg-2.png",
-			btnLabel: "Rental Car",
-			btnClass: "btn-secondary-morent",
-		},
-	];
-
-	const productData = [
-		{
-			carTitle: "Koenigsegg",
-			carCategory: "Sport",
-			fav: true,
-			salePrice: true,
-			img: "/assets/ad-1.png",
-		},
-		{
-			carTitle: "Nissan GT - R",
-			carCategory: "Sport",
-			fav: false,
-			salePrice: false,
-			img: "/assets/ad-2.png",
-		},
-		{
-			carTitle: "Rolls - Royce",
-			carCategory: "Sedan",
-			fav: true,
-			salePrice: true,
-			img: "/assets/rolls.png",
-		},
-		{
-			carTitle: "Nissan GT - R",
-			carCategory: "Sport",
-			fav: false,
-			salePrice: false,
-			img: "/assets/ad-2.png",
-		},
-	];
-
-	const recomendCar = [
+	const [recomendCar, setRecomendCar] = useState([
 		{
 			carTitle: "All New Rush",
 			carCategory: "SUV",
@@ -120,6 +68,104 @@ const Home = () => {
 			salePrice: false,
 			recomend: true,
 			img: "/assets/mg-zs.png",
+		},
+	]);
+
+	const [isLoading, setIsLoading] = useState(false);
+
+	const handleShowMore = () => {
+		setIsLoading(true);
+		setTimeout(() => {
+			setRecomendCar([
+				...recomendCar,
+
+				{
+					carTitle: "All New Rush",
+					carCategory: "SUV",
+					fav: true,
+					salePrice: true,
+					recomend: true,
+					img: "/assets/rush.png",
+				},
+				{
+					carTitle: "CR  - V",
+					carCategory: "SUV",
+					fav: false,
+					salePrice: false,
+					recomend: true,
+					img: "/assets/cr-v.png",
+				},
+				{
+					carTitle: "All New Terios",
+					carCategory: "SUV",
+					fav: true,
+					salePrice: true,
+					recomend: true,
+					img: "/assets/terios.png",
+				},
+				{
+					carTitle: "CR  - V",
+					carCategory: "SUV",
+					fav: false,
+					salePrice: false,
+					recomend: true,
+					img: "/assets/crv-black.png",
+				},
+			]);
+
+			setIsLoading(false);
+		}, 2000);
+	};
+
+	const headerData = [
+		{
+			heading: `The Best Platform for Car Rental`,
+			para: `Ease of doing a car rental safely and
+			reliably. Of course at a low price.`,
+			backgroundColor: "#54a6ff",
+			background: "/assets/ad-bg-1.png",
+			btnLabel: "Rental Car",
+			btnClass: "btn-primary-morent",
+		},
+		{
+			heading: `Easy way to rent a car at a low price`,
+			para: `Providing cheap car rental services
+			and safe and comfortable facilities.`,
+			backgroundColor: "#3563e9",
+			background: "/assets/ad-bg-2.png",
+			btnLabel: "Rental Car",
+			btnClass: "btn-secondary-morent",
+		},
+	];
+
+	const productData = [
+		{
+			carTitle: "Koenigsegg",
+			carCategory: "Sport",
+			fav: true,
+			salePrice: true,
+			img: "/assets/ad-1.png",
+		},
+		{
+			carTitle: "Nissan GT - R",
+			carCategory: "Sport",
+			fav: false,
+			salePrice: false,
+			img: "/assets/ad-2.png",
+		},
+		{
+			carTitle: "Rolls - Royce",
+			carCategory: "Sedan",
+			fav: true,
+			salePrice: true,
+			img: "/assets/rolls.png",
+		},
+		{
+			carTitle: "Nissan GT - R",
+			carCategory: "Sport",
+			fav: false,
+			salePrice: false,
+			img: "/assets/ad-2.png",
 		},
 	];
 
@@ -200,13 +246,25 @@ const Home = () => {
 						})}
 					</div>
 
+					{isLoading && (
+						<div className="mb-5 d-flex justify-content-center">
+							<div className="spinner-border text-primary" role="status">
+								<span className="visually-hidden">Loading...</span>
+							</div>
+						</div>
+					)}
+
 					<div className="d-flex align-items-center justify-content-center px-4 mb-5">
 						<div className="mx-auto">
-							<button type="button" className="btn btn-primary-morent">
+							<button
+								type="button"
+								disabled={isLoading}
+								onClick={() => handleShowMore()}
+								className="btn btn-primary-morent">
 								Show more car
 							</button>
 						</div>
-						<div className="fs-16 fw-600 text-secondary-100">120 Car</div>
+						<div className="fs-16 fw-600 text-secondary-100">{recomendCar?.length} Car</div>
 					</div>
 				</div>
 			</section>

@@ -9,8 +9,8 @@ const Home = () => {
 			heading: `The Best Platform for Car Rental`,
 			para: `Ease of doing a car rental safely and
 			reliably. Of course at a low price.`,
-			background: "#54a6ff",
-			img: "/assets/ad-1.png",
+			backgroundColor: "#54a6ff",
+			background: "/assets/ad-bg-1.png",
 			btnLabel: "Rental Car",
 			btnClass: "btn-primary-morent",
 		},
@@ -18,8 +18,8 @@ const Home = () => {
 			heading: `Easy way to rent a car at a low price`,
 			para: `Providing cheap car rental services
 			and safe and comfortable facilities.`,
-			background: "#3563e9",
-			img: "/assets/ad-2.png",
+			backgroundColor: "#3563e9",
+			background: "/assets/ad-bg-2.png",
 			btnLabel: "Rental Car",
 			btnClass: "btn-secondary-morent",
 		},

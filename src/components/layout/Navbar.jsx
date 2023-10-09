@@ -60,7 +60,7 @@ const headerNav = () => {
 			</Navbar>
 			{/* responsive navbar */}
 
-			<nav className="sm-nav-mob">
+			<nav className="sm-nav-mob d-block d-lg-none">
 				<div className="d-flex align-items-center justify-content-between mb-32">
 					<div className="mob-logo">Morent</div>
 					<div className="profile-img">

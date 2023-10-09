@@ -69,12 +69,12 @@ const Footer = () => {
 					</div>
 					<hr className="my-5" />
 					<div className="sub-foot d-flex flex-column flex-lg-row align-items-lg-center justify-content-between">
-						<div className="fs-16 fw-500 order-2 order-lg-1 mt-4 mt-lg-0">©2023 MORENT. All rights reserved</div>
+						<div className="fs-16 fw-600 order-2 order-lg-1 mt-4 mt-lg-0">©2023 MORENT. All rights reserved</div>
 						<div className="d-flex gap-5 order-1 order-lg-2 justify-content-between">
-							<a href="#" className="d-inline-block fs-16 fw-500">
+							<a href="#" className="d-inline-block fs-16 fw-600">
 								Privacy & Policy
 							</a>
-							<a href="#" className="d-inline-block fs-16 fw-500">
+							<a href="#" className="d-inline-block fs-16 fw-600">
 								Terms & Condition
 							</a>
 						</div>

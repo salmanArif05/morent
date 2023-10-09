@@ -159,7 +159,7 @@ const Home = () => {
 			<section className="mb-5">
 				<div className="container">
 					<div className="d-flex align-items-center justify-content-between px-4 mb-5">
-						<div className="fs-16 fw-500 text-secondary-100">Popular Car</div>
+						<div className="fs-16 fw-600 text-secondary-100">Popular Car</div>
 						<div className="">
 							<a href="#" className="fs-16 fw-600 text-primary-100">
 								View All
@@ -180,7 +180,7 @@ const Home = () => {
 					</div>
 
 					<div className="d-flex align-items-center justify-content-between px-4 mb-5">
-						<div className="fs-16 fw-500 text-secondary-100">Recommendation Car</div>
+						<div className="fs-16 fw-600 text-secondary-100">Recommendation Car</div>
 						<div className="">
 							{/* <a href="#" className="fs-16 fw-600 text-primary-100">
 								View All
@@ -206,7 +206,7 @@ const Home = () => {
 								Show more car
 							</button>
 						</div>
-						<div className="fs-16 fw-500 text-secondary-100">120 Car</div>
+						<div className="fs-16 fw-600 text-secondary-100">120 Car</div>
 					</div>
 				</div>
 			</section>

@@ -10,8 +10,8 @@ const ProductCard = ({ data }) => {
 			<div className="product-card">
 				<div className="d-flex align-items-center justify-content-between">
 					<div className="d-flex flex-column">
-						<div className="car-title fs-20 fw-600 text-capitalize">{carTitle}</div>
-						<div className="car-category fs-14 fw-500 text-secondary-100 text-capitalize">{carCategory}</div>
+						<div className="car-title fs-20 fw-700 text-capitalize">{carTitle}</div>
+						<div className="car-category fs-14 fw-700 text-secondary-100 text-capitalize">{carCategory}</div>
 					</div>
 					{fav ? (
 						<div className="pointer heart-fav-filled">
@@ -34,19 +34,19 @@ const ProductCard = ({ data }) => {
 						<div className="icon">
 							<BsFillFuelPumpFill />
 						</div>
-						<div className="fs-14 fw-400 text-secondary-100">90L</div>
+						<div className="fs-14 fw-500 text-secondary-100">90L</div>
 					</div>
 					<div className="d-flex gap-1 align-items-center">
 						<div className="icon">
 							<PiSteeringWheelFill />
 						</div>
-						<div className="fs-14 fw-400 text-secondary-100">Manual</div>
+						<div className="fs-14 fw-500 text-secondary-100">Manual</div>
 					</div>
 					<div className="d-flex gap-1 align-items-center">
 						<div className="icon">
 							<HiUsers />
 						</div>
-						<div className="fs-14 fw-400 text-secondary-100">2 People</div>
+						<div className="fs-14 fw-500 text-secondary-100">2 People</div>
 					</div>
 				</div>
 

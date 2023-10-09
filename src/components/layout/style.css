@@ -11,7 +11,7 @@
 	font-weight: 700;
 	font-size: 2rem;
 	text-transform: uppercase;
-	letter-spacing: 0.1rem;
+	letter-spacing: -0.96px;
 }
 
 .headNav .search {
@@ -49,7 +49,7 @@
 }
 
 .headNav .nav-link {
-	--size: 35px;
+	--size: 44px;
 	border: 1px solid rgba(195, 212, 233, 0.4);
 	border-radius: 50%;
 	width: var(--size);
@@ -106,22 +106,24 @@ footer a {
 }
 
 footer .foot-logo {
-	font-size: 30px;
+	font-size: 32px;
 	font-weight: 700;
 	color: var(--morent-primary);
 	margin-bottom: 20px;
+	letter-spacing: -0.96px;
 }
 
 footer .foot-para {
-	font-size: 14px;
-	font-weight: 400;
-	color: var(--morent-secondary);
+	font-size: 16px;
+	font-weight: 500;
+	color: rgba(19, 19, 19, 0.6);
 }
 
 footer .foot-link-heading {
-	font-size: 24px;
-	font-weight: 500;
+	font-size: 20px;
+	font-weight: 600;
 	margin-bottom: 24px;
+	color: #1a202c;
 }
 
 footer ul {
@@ -135,13 +137,13 @@ footer ul li {
 }
 
 footer ul a {
-	color: var(--morent-secondary);
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 500;
+	color: rgba(19, 19, 19, 0.6);
 }
 
 .sub-foot a {
-	color: #000;
+	color: #1a202c;
 }
 
 /* footer style end */

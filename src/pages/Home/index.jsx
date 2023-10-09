@@ -101,30 +101,6 @@ const Home = () => {
 			fav: false,
 			salePrice: false,
 		},
-		{
-			carTitle: "Koenigsegg",
-			carCategory: "Sport",
-			fav: true,
-			salePrice: true,
-		},
-		{
-			carTitle: "Aston Martin",
-			carCategory: "Sport",
-			fav: false,
-			salePrice: false,
-		},
-		{
-			carTitle: "Koenigsegg",
-			carCategory: "Sport",
-			fav: true,
-			salePrice: true,
-		},
-		{
-			carTitle: "Aston Martin",
-			carCategory: "Sport",
-			fav: false,
-			salePrice: false,
-		},
 	];
 
 	return (
@@ -175,7 +151,7 @@ const Home = () => {
 						{productData.map((item, i) => {
 							return (
 								<React.Fragment key={i}>
-									<div className="col-lg-3 mb-4 mb-lg-0">
+									<div className="col-lg-3 mb-4">
 										<ProductCard data={item} />
 									</div>
 								</React.Fragment>
@@ -196,7 +172,7 @@ const Home = () => {
 						{recomendCar.map((item, i) => {
 							return (
 								<React.Fragment key={i}>
-									<div className="col-lg-3 mb-4 mb-lg-0">
+									<div className="col-lg-3 mb-4">
 										<ProductCard data={item} />
 									</div>
 								</React.Fragment>

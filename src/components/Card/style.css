@@ -38,7 +38,7 @@
 
 .search-card {
 	background-color: #fff;
-	border-radius: 12px;
+	border-radius: 10px;
 	padding: 20px 30px;
 }
 
@@ -75,7 +75,7 @@
 
 .product-card {
 	background-color: #fff;
-	border-radius: 12px;
+	border-radius: 10px;
 	width: 100%;
 	padding: 14px;
 	height: 100%;

@@ -16,7 +16,7 @@ import { HiMiniUser } from "react-icons/hi2";
 const headerNav = () => {
 	return (
 		<>
-			<Navbar expand={"lg"} className="headNav">
+			<Navbar expand={"lg"} className="headNav d-none d-lg-flex">
 				<Container>
 					<Navbar.Brand href="#">Morent</Navbar.Brand>
 					<Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
@@ -58,6 +58,28 @@ const headerNav = () => {
 					</Navbar.Offcanvas>
 				</Container>
 			</Navbar>
+			{/* responsive navbar */}
+
+			<nav className="sm-nav-mob">
+				<div className="d-flex align-items-center justify-content-between mb-32">
+					<div className="mob-logo">Morent</div>
+					<div className="profile-img">
+						<img src="/assets/user.png" alt="" />
+					</div>
+				</div>
+
+				<div className="d-flex gap-3 align-items-center">
+					<div className="sm-search">
+						<div className="search-icon">
+							<LuSearch />
+						</div>
+						<input type="text" placeholder="Search something here" />
+					</div>
+					<div className="filter-btn">
+						<PiSlidersHorizontalThin />
+					</div>
+				</div>
+			</nav>
 		</>
 	);
 };

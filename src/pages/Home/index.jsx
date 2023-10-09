@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import { HeaderCard, ProductCard, ProductResponsive, SearchCard } from "../../components";
 import { TbArrowsSort } from "react-icons/tb";
+import Slider from "react-slick";
 
 const Home = () => {
 	const [recomendCar, setRecomendCar] = useState([
@@ -117,6 +118,43 @@ const Home = () => {
 		}, 2000);
 	};
 
+	const settings = {
+		dots: false,
+		infinite: false,
+		speed: 500,
+		slidesToShow: 4,
+		slidesToScroll: 4,
+		initialSlide: 0,
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					infinite: true,
+					dots: false,
+				},
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					initialSlide: 2,
+				},
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1.3,
+					slidesToScroll: 1,
+					dots: false,
+				},
+			},
+		],
+	};
+
 	const headerData = [
 		{
 			heading: `The Best Platform for Car Rental`,
@@ -171,7 +209,7 @@ const Home = () => {
 
 	return (
 		<>
-			<header className="my-5">
+			<header className="my-lg-5 my-4 px-2 px-lg-0">
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-6 mb-4 mb-lg-0">
@@ -184,7 +222,7 @@ const Home = () => {
 				</div>
 			</header>
 
-			<section className="mb-5">
+			<section className="mb-5 px-2 px-lg-0">
 				<div className="container">
 					<div className="row align-items-center">
 						<div className="col-lg-5">
@@ -202,7 +240,7 @@ const Home = () => {
 				</div>
 			</section>
 
-			<section className="mb-5">
+			<section className="mb-5 px-2 px-lg-0">
 				<div className="container">
 					<div className="d-flex align-items-center justify-content-between px-lg-4 mb-5">
 						<div className="fs-16 fw-600 text-secondary-100">Popular Car</div>
@@ -213,7 +251,7 @@ const Home = () => {
 						</div>
 					</div>
 
-					<div className="row mb-5">
+					<div className="row mb-5 d-none d-lg-flex">
 						{productData.map((item, i) => {
 							return (
 								<React.Fragment key={i}>
@@ -225,7 +263,19 @@ const Home = () => {
 						})}
 					</div>
 
-					<div className="d-flex align-items-center justify-content-between px-lg-4 mb-5">
+					<div className="d-block d-lg-none">
+						<Slider {...settings}>
+							{productData.map((item, i) => {
+								return (
+									<div key={i} className="w-100 px-2">
+										<ProductCard data={item} />
+									</div>
+								);
+							})}
+						</Slider>
+					</div>
+
+					<div className="d-flex align-items-center justify-content-between px-lg-4 mb-5 mt-5 mt-lg-0">
 						<div className="fs-16 fw-600 text-secondary-100">Recommendation Car</div>
 						<div className="">
 							{/* <a href="#" className="fs-16 fw-600 text-primary-100">
@@ -234,7 +284,7 @@ const Home = () => {
 						</div>
 					</div>
 
-					<div className="row mb-5">
+					<div className="row mb-5 ">
 						{recomendCar.map((item, i) => {
 							return (
 								<React.Fragment key={i}>

@@ -3,7 +3,7 @@ import React from "react";
 const Search = ({ heading, bgDot }) => {
 	return (
 		<>
-			<div className="search-card shadow">
+			<div className="search-card shadow-sm">
 				<div className="d-flex align-items-center mb-3 gap-2">
 					<div className={`pick-dot ${bgDot}`}></div>
 					<div className="heading fs-16 fw-600">{heading}</div>
